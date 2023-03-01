@@ -4,8 +4,7 @@ from evrone_fastapi.settings import settings
 
 
 def test_answer():
-    print("2", settings.main_url)
     client = TestClient(app)
     result = client.get(settings.main_url)
-    assert result.status_code == 201
+    assert result.status_code == 200
     assert result.json() == {"status": "OK"}
