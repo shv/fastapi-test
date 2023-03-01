@@ -1,5 +1,5 @@
 # pull official base image
-FROM python:3.11.1-alpine
+FROM python:3.11.2-alpine
 
 EXPOSE 8000
 # set work directory
