@@ -21,4 +21,4 @@ jobs:
         pip install poetry
     - name: Run Tests
       run: |
-        poetry run tests
+        poetry run pytest
